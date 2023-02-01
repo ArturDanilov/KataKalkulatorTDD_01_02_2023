@@ -5,7 +5,7 @@
         public string Add(string str)
         {
             int count = str.Length - 1;
-            string[] number = str.Split('+', '-', '/');
+            string[] number = str.Split('+', '-', '/', '*');
             
             CheckNachBuchstebeA(str);
 
@@ -51,14 +51,19 @@
                         throw new DivideByZeroException("Dividieren durch Null");
                     }
 
-                }                
+                }
+
+                if (str.Contains('*'))
+                {
+                    return (a * b).ToString();
+                }
             }
             return number[1];
         }
 
         private void CheckNachBuchstebeA(string str)
         {
-            if (str.Contains('A') || str.Contains('a'))
+            if (str.Any(c => char.IsLetter(c)))
             {
                 throw new ArgumentException("Buchstaben sind nicht erlaubt");
             }

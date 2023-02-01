@@ -188,5 +188,53 @@ namespace KataKalkulatorTDD_01_02_2023_Tests
 
             Assert.That(myExeption.Message, Is.EqualTo("Buchstaben sind nicht erlaubt"));
         }
+
+        [Test]
+        public void Add_Eingabe1Minus_b_ReturnExeption()
+        {
+            var myExeption = Assert.Throws<ArgumentException>(() => _kalkulator.Add("1-b"));
+
+            Assert.That(myExeption.Message, Is.EqualTo("Buchstaben sind nicht erlaubt"));
+        }
+
+        [Test]
+        public void Add_Eingabe1Minus_c_ReturnExeption()
+        {
+            var myExeption = Assert.Throws<ArgumentException>(() => _kalkulator.Add("1-c"));
+
+            Assert.That(myExeption.Message, Is.EqualTo("Buchstaben sind nicht erlaubt"));
+        }
+
+        [Test]
+        public void Add_Eingabe3Mult5_Return15()
+        {
+            var actual = _kalkulator.Add("3*5");
+
+            Assert.That(actual, Is.EqualTo("15"));
+        }
+
+        [Test]
+        public void Add_Eingabe30Mult5_Return150()
+        {
+            var actual = _kalkulator.Add("30*5");
+
+            Assert.That(actual, Is.EqualTo("150"));
+        }
+
+        [Test]
+        public void Add_Eingabe3Mult500_Return1500()
+        {
+            var actual = _kalkulator.Add("3*500");
+
+            Assert.That(actual, Is.EqualTo("1500"));
+        }
+
+        [Test]
+        public void Add_Eingabe30Mult500_Return15000()
+        {
+            var actual = _kalkulator.Add("30*500");
+
+            Assert.That(actual, Is.EqualTo("15000"));
+        }
     }
 }
