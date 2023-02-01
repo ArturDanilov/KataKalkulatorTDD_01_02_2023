@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataKalkulatorTDD_01_02_2023", "KataKalkulatorTDD_01_02_2023\KataKalkulatorTDD_01_02_2023.csproj", "{01EF02A0-ECE5-4833-AE33-E84F0FF78FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataKalkulatorTDD_01_02_2023_Tests", "KataKalkulatorTDD_01_02_2023_Tests\KataKalkulatorTDD_01_02_2023_Tests.csproj", "{8BE2FD19-EAB3-43E3-B584-AD08A0032AE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01EF02A0-ECE5-4833-AE33-E84F0FF78FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01EF02A0-ECE5-4833-AE33-E84F0FF78FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01EF02A0-ECE5-4833-AE33-E84F0FF78FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01EF02A0-ECE5-4833-AE33-E84F0FF78FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE2FD19-EAB3-43E3-B584-AD08A0032AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE2FD19-EAB3-43E3-B584-AD08A0032AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE2FD19-EAB3-43E3-B584-AD08A0032AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE2FD19-EAB3-43E3-B584-AD08A0032AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6894D1AB-13E5-48EC-811C-18BC54D46AC4}
+	EndGlobalSection
+EndGlobal
